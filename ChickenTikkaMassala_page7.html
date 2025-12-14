@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20-Minute Chicken Tikka Masala Hack</title>
+    <style>
+        /* Basic Reset and Body Styling */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        /* Container for Content */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 2.4em;
+            color: #b12836; /* A deep red for the main title */
+            border-bottom: 3px solid #f0ad4e;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 1.6em;
+            color: #333;
+            margin-top: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            font-size: 1.3em;
+            color: #5cb85c; /* A green for phase headings */
+            margin-top: 20px;
+        }
+
+        /* Recipe Summary Table Styling */
+        .recipe-overview table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+        }
+
+        .recipe-overview th, .recipe-overview td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: none;
+        }
+        
+        .recipe-overview tr:not(:last-child) th,
+        .recipe-overview tr:not(:last-child) td {
+            border-bottom: 1px solid #eee;
+        }
+
+        .recipe-overview th {
+            background-color: #f0ad4e; /* Orange header */
+            color: #fff;
+            width: 30%;
+        }
+
+        /* NEW Shopping List Styling (Single Column) */
+        .shopping-list {
+            background-color: #e5ffe5; /* Very light green background to stand out */
+            padding: 15px 25px;
+            border: 1px solid #5cb85c;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .shopping-list h2 {
+            color: #5cb85c;
+            border-bottom: 1px dashed #5cb85c;
+            margin-top: 0;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .shopping-list ul {
+            list-style-type: none;
+            padding: 0;
+            /* Removed columns: 2; to ensure single line items */
+        }
+        
+        .shopping-list li {
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        /* Adjusted width for best single-line alignment */
+        .shopping-list .quantity {
+            font-weight: bold;
+            color: #b12836; 
+            display: inline-block;
+            width: 115px; /* Allocated space for the longest quantity text, ensuring alignment */
+        }
+
+        /* Ingredients Table Styling */
+        .ingredients-list table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        .ingredients-list th, .ingredients-list td {
+            padding: 10px;
+            border: 1px solid #eee;
+            vertical-align: top;
+        }
+
+        .ingredients-list th {
+            background-color: #5bc0de; /* Blue header */
+            color: #fff;
+            text-align: left;
+        }
+
+        .ingredients-list tr:nth-child(even) {
+            background-color: #f4f4f4;
+        }
+
+        .secret-ingredient {
+            font-weight: bold;
+            color: #b12836;
+            background-color: #fffacd; /* Light yellow background */
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+
+        /* Instructions List Styling */
+        .instructions ol {
+            padding-left: 20px;
+        }
+
+        .instructions li {
+            margin-bottom: 15px;
+            padding-left: 10px;
+            counter-increment: step-counter;
+        }
+
+        /* Highlighted text for emphasis */
+        .highlight {
+            font-weight: bold;
+            color: #b12836;
+        }
+
+        /* Footer/Disclaimer */
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1> 20-Minute Chicken Tikka Masala Hack <br>(The Secret: Heinz Tomato Soup!)</h1>
+            <p>This recipe is a life-hack for a delicious, creamy Chicken Tikka Masala that feeds a family of four in about 20 minutes! We're using the "secret ingredient" allegedly used in the very first Chicken Tikka Masala invented in Glasgow, Scotland—<span class="highlight">**Heinz Cream of Tomato Soup**</span>—to get that rich, authentic flavor fast.</p>
+        </header>
+
+        <section class="recipe-overview">
+            <h2>&#x2B50; Recipe Overview</h2>
+            <table>
+                <tr><th>Prep Time</th><td>5 Minutes</td></tr>
+                <tr><th>Cook Time</th><td>20 Minutes</td></tr>
+                <tr><th>Total Time</th><td>25 Minutes</td></tr>
+                <tr><th>Serves</th><td>3–4 People</td></tr>
+            </table>
+        </section>
+
+        <section class="shopping-list">
+            <h2>&#x1F6CD; Quick Shopping List</h2>
+            <ul>
+                <li><span class="quantity">600-800g</span> Chicken Breast/Thigh</li>
+                <li><span class="quantity">1 standard tin</span> Heinz Tomato Soup</li>
+                <li><span class="quantity">1 standard tin</span> Tinned Chopped Tomatoes</li>
+                <li><span class="quantity">4 tbsp</span> Vegetable Oil</li>
+                <li><span class="quantity">2 tbsp</span> Ginger Garlic Paste</li>
+                <li><span class="quantity">1 tsp</span> Garam Masala</li>
+                <li><span class="quantity">A measure</span> Curry Powder</li>
+                <li><span class="quantity">A measure</span> Cumin Powder</li>
+                <li><span class="quantity">To taste</span> Salt</li>
+                <li><span class="quantity">To taste</span> Mango Chutney</li>
+                <li><span class="quantity">2 tbsp</span> White Granulated Sugar</li>
+                <li><span class="quantity">1.5–2 tbsp</span> Double Cream</li>
+            </ul>
+        </section>
+
+        <section class="ingredients-list">
+            <h2>&#x1F5C3; Detailed Ingredient Quantities</h2>
+            <table>
+                <thead>
+                    <tr><th>Category</th><th>Item</th><th>Quantity</th><th>Notes</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td rowspan="2"><b>The Base</b></td><td>Vegetable Oil</td><td>4 tbsp</td><td></td></tr>
+                    <tr><td>Ginger Garlic Paste</td><td>2 tbsp</td><td>(Homemade fresh or frozen 50/50 blend works great!)</td></tr>
+                    <tr><td rowspan="3"><b>Spices</b></td><td>Garam Masala</td><td>A measure</td><td>(Approx. 1 tsp – add all spices together)</td></tr>
+                    <tr><td>Curry Powder</td><td>A measure</td><td></td></tr>
+                    <tr><td>Cumin Powder</td><td>A measure</td><td></td></tr>
+                    <tr><td><b>The Chicken</b></td><td>Diced Chicken Breast/Thigh</td><td>Approx. 600g–800g</td><td></td></tr>
+                    <tr><td rowspan="2"><b>The Gravy</b></td><td>Tinned Chopped Tomatoes</td><td>1 standard tin (approx. 400g)</td><td></td></tr>
+                    <tr><td><span class="secret-ingredient">Heinz Cream of Tomato Soup</span></td><td>1 standard tin</td><td><span class="secret-ingredient">The Secret Ingredient!</span></td></tr>
+                    <tr><td rowspan="3"><b>Flavour/Seasoning</b></td><td>Salt</td><td>To taste</td><td>Start with just under 1 tsp</td></tr>
+                    <tr><td>Mango Chutney</td><td>To taste</td><td>Adjust for sweetness/fruitiness</td></tr>
+                    <tr><td>White Granulated Sugar</td><td>2 tbsp (or to taste)</td><td>Added in two stages</td></tr>
+                    <tr><td><b>Finishing Touch</b></td><td>Double Cream (or Single)</td><td>1.5–2 tbsp</td><td>Double cream is less likely to split</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="instructions">
+            <h2>&#x1F469;&#x200D;&#x1F373; Instructions</h2>
+
+            <ol>
+                <li>
+                    <h3>Phase 1: Building the Flavor Base</h3>
+                    <ol>
+                        <li><span class="highlight">Heat the Oil:</span> Fire up your cooker and pour the 4 tablespoons of vegetable oil into a large pan or pot. Warm it through on a medium heat.</li>
+                        <li><span class="highlight">Fry the Aromatics:</span> Add the 2 tablespoons of ginger garlic paste to the warm oil. Fry this out until fragrant (a few minutes).</li>
+                        <li><span class="highlight">Bloom the Spices:</span> Add the Garam Masala, Curry Powder, and Cumin Powder to the pan. Fry them for a very short time (<span class="highlight">30 seconds to 1 minute</span>) to take out the bitterness/rawness.</li>
+                        <li><span class="highlight">Add the Chicken:</span> Immediately add your diced chicken to the pan. Stir well to ensure the chicken is completely coated in the spices.</li>
+                    </ol>
+                </li>
+
+                <li>
+                    <h3>Phase 2: Creating the Curry</h3>
+                    <ol>
+                        <li><span class="highlight">Add Tomatoes:</span> Pour in the tin of chopped tomatoes and stir it into the chicken and spice mixture.</li>
+                        <li><span class="highlight">Add the Soup:</span> Now, add the entire tin of <span class="highlight">Heinz Cream of Tomato Soup</span>. The tinned tomatoes and soup together create the volume of gravy needed for a family of four.</li>
+                        <li><span class="highlight">Simmer:</span> Give everything a good, thorough stir. Bring it to a gentle simmer, cover the pot with a lid, and let it cook for <span class="highlight">**20 minutes**</span>. This ensures the chicken is cooked through.</li>
+                    </ol>
+                </li>
+
+                <li>
+                    <h3>Phase 3: Finishing and Seasoning</h3>
+                    <ol>
+                        <li><span class="highlight">Check Consistency:</span> After 20 minutes, stop the timer and remove the lid. If the sauce is too thin, turn the flame up high and let it reduce for a few extra minutes until it thickens slightly.</li>
+                        <li><span class="highlight">Seasoning 1 (Salt & Fruit):</span> Stir in the salt (start with just under 1 teaspoon) and the mango chutney. The chutney adds a traditional, fruity sweetness.</li>
+                        <li><span class="highlight">Sweeten (The Blast):</span> Taste the sauce. To get that signature sweet 'tikka masala' blast, add **1 tablespoon of sugar** and stir until dissolved. Taste again, and if needed, add a **second tablespoon of sugar** (2 total) and stir.</li>
+                        <li><span class="highlight">Add the Cream:</span> Turn the heat down or off. Add 1.5 to 2 tablespoons of double cream. Stir it in until the sauce has a beautiful, silky, creamy texture and color.</li>
+                    </ol>
+                </li>
+            </ol>
+        </section>
+
+        <div class="footer">
+            <p>Serve immediately with rice and/or naan bread. Enjoy this delicious Chicken Tikka Masala Hack!</p>
+        </div>
+
+    </div>
+</body>
+</html>
