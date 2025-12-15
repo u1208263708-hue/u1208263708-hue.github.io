@@ -15,7 +15,7 @@
             color: #333;
         }
 
-        /* Container for Content (Copied from Recipe) */
+        /* CONTAINER: This is the central 'page' structure */
         .container {
             max-width: 900px;
             margin: 40px auto;
@@ -23,17 +23,17 @@
             background-color: #fff;
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            min-height: 70vh; /* Added min-height for visual structure */
+            min-height: 70vh;
         }
 
         /* Typography (Copied from Recipe) */
         h1 {
             font-size: 2.2em;
-            color: #b12836; /* A deep red for the main title */
+            color: #b12836; 
             border-bottom: 3px solid #f0ad4e;
             padding-bottom: 10px;
             margin-bottom: 20px;
-            text-align: center; /* Center the main site title */
+            text-align: center; 
         }
 
         h2 {
@@ -44,7 +44,7 @@
             padding-bottom: 5px;
         }
 
-        /* New Styling for Recipe Links/List */
+        /* Recipe List Styling */
         .recipe-list {
             list-style-type: none;
             padding: 0;
@@ -61,7 +61,7 @@
         }
 
         .recipe-list li:hover {
-            background-color: #ffeccf; /* Light orange on hover */
+            background-color: #ffeccf; 
             border-color: #f0ad4e;
         }
 
@@ -74,7 +74,7 @@
         }
 
         .recipe-link:hover {
-            color: #b12836; /* Deep red on link hover */
+            color: #b12836; 
         }
         
         .recipe-tagline {
@@ -83,18 +83,13 @@
             margin-top: 5px;
         }
 
-        /* === NEW & MODIFIED CSS for a stable video section === */
+        /* === SAFE VIDEO PLACEMENT CSS === */
+        /* Only use text-align: center on the container to center the text and h3 */
         .video-container {
-            /* Ensures the video content is centered */
-            text-align: center; 
-            /* Provides visual separation from the recipe list */
-            margin: 40px 0 20px 0; 
-            padding: 20px;
-            /* Added a subtle border/background for visual separation */
-            border: 1px dashed #f0ad4e; 
-            border-radius: 8px;
+            text-align: center;
+            margin: 40px 0 20px 0; /* Clear vertical spacing */
         }
-
+        
         .video-container h3 {
             font-size: 1.4em;
             color: #b12836;
@@ -102,17 +97,15 @@
         }
 
         .homepage-video {
-            /* Set the video to be a centered block element */
+            /* This is the key: display: block and margin: 0 auto for centering */
             display: block; 
-            /* Centers the block element itself within its parent container */
             margin: 0 auto; 
-            /* Ensures responsiveness and max size */
             width: 100%; 
             max-width: 500px; 
             height: auto;
             border-radius: 6px;
         }
-        /* ============================================================= */
+        /* ================================ */
 
         /* Footer/Disclaimer (Copied from Recipe) */
         .footer {
