@@ -36,22 +36,6 @@
             text-align: center; /* Center the main site title */
         }
 
-        /* Styling for the video element */
-        .header-video {
-            /* Treat the video as an inline block so it sits next to the text */
-            display: inline-block; 
-            /* Set a suitable size for the video */
-            width: 50px; /* Slightly larger for video for clarity */
-            height: 50px;
-            /* Ensure the video content covers the element without distortion */
-            object-fit: cover; 
-            /* Remove the default border/controls */
-            border: none;
-            /* Vertically align the image with the text */
-            vertical-align: middle; 
-            margin: 0 10px;
-        }
-
         h2 {
             font-size: 1.6em;
             color: #333;
@@ -59,6 +43,23 @@
             border-bottom: 1px solid #eee;
             padding-bottom: 5px;
         }
+
+        /* === NEW CSS: Styling for the Video Section at the bottom === */
+        .video-section {
+            text-align: center; /* Centers the video element itself */
+            margin: 30px 0;
+            padding: 20px 0;
+            border-top: 1px solid #eee;
+        }
+
+        .homepage-video {
+            width: 100%; /* Make video responsive up to max container width */
+            max-width: 400px; /* Set a reasonable maximum size */
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        /* ============================================================= */
 
         /* New Styling for Recipe Links/List */
         .recipe-list {
@@ -115,10 +116,8 @@
     <div class="container">
 
         <header>
-                        <h1>
-                <video src="cooking_animation.mp4" class="header-video" autoplay loop muted></video>
+                            <h1>
                 &#x1F373;&#x1f1ec;&#x1f1e7 We Have The Recipes! &#x1f1ec;&#x1f1e7<br>&#x1f1ec;&#x1f1e7 Dr. Kurrygan &mdash; a lover of takeaways &#x1f1ec;&#x1f1e7
-                <video src="cooking_animation.mp4" class="header-video" autoplay loop muted></video>
             </h1>
             <p style="text-align: center; font-style: italic;">Simple, Fast, &mdash; Simply Delicious.</p>
         </header>
@@ -149,4 +148,20 @@
                     <a href="#" class="recipe-link">
                         **[Coming Soon]** Super Simple Rogan Josh
                     </a>
-                    <p class="recipe-tagline">Check back soon for more quick and delicious meals that are cheaper than the chipper! I'm a hungry boy and knows me grub</
+                    <p class="recipe-tagline">Check back soon for more quick and delicious meals that are cheaper than the chipper! I'm a hungry boy and knows me grub</p>
+                </li>
+
+            </ul>
+        </section>
+
+        <div class="video-section">
+            <video src="cooking_animation.mp4" class="homepage-video" autoplay loop controls></video>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 We Have The Recipes. All rights reserved.<br>Powered by K9 &#x1F609;</p>
+        </div>
+
+    </div>
+</body>
+</html>
