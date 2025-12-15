@@ -1,173 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>We Have The Recipes | Simple, Fast, Delicious</title>
-    <style>
-        /* Basic Reset and Body Styling (Copied from Recipe) */
-        body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f7f7f7;
-            color: #333;
-        }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Have The Recipes | Simple, Fast, Delicious</title>
+    <style>
+        /* Basic Reset and Body Styling (Copied from Recipe) */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
 
-        /* CONTAINER: This is the central 'page' structure */
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 30px;
-            background-color: #fff;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            min-height: 70vh;
-        }
+        /* Container for Content (Copied from Recipe) */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            min-height: 70vh; /* Added min-height for visual structure */
+        }
 
-        /* Typography (Copied from Recipe) */
-        h1 {
-            font-size: 2.2em;
-            color: #b12836; 
-            border-bottom: 3px solid #f0ad4e;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            text-align: center; 
-        }
+        /* Typography (Copied from Recipe) */
+        h1 {
+            font-size: 2.2em;
+            color: #b12836; /* A deep red for the main title */
+            border-bottom: 3px solid #f0ad4e;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: center; /* Center the main site title */
+        }
 
-        h2 {
-            font-size: 1.6em;
-            color: #333;
-            margin-top: 30px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 5px;
-        }
+        h2 {
+            font-size: 1.6em;
+            color: #333;
+            margin-top: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
 
-        /* Recipe List Styling */
-        .recipe-list {
-            list-style-type: none;
-            padding: 0;
-            margin-top: 20px;
-        }
+        /* New Styling for Recipe Links/List */
+        .recipe-list {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
 
-        .recipe-list li {
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            margin-bottom: 15px;
-            padding: 15px;
-            border-radius: 8px;
-            transition: background-color 0.3s ease;
-        }
+        .recipe-list li {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
 
-        .recipe-list li:hover {
-            background-color: #ffeccf; 
-            border-color: #f0ad4e;
-        }
+        .recipe-list li:hover {
+            background-color: #ffeccf; /* Light orange on hover */
+            border-color: #f0ad4e;
+        }
 
-        .recipe-link {
-            text-decoration: none;
-            color: #333;
-            font-size: 1.2em;
-            font-weight: bold;
-            display: block;
-        }
+        .recipe-link {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2em;
+            font-weight: bold;
+            display: block;
+        }
 
-        .recipe-link:hover {
-            color: #b12836; 
-        }
-        
-        .recipe-tagline {
-            font-size: 0.9em;
-            color: #666;
-            margin-top: 5px;
-        }
-
-        /* === SAFE VIDEO PLACEMENT CSS === */
-        /* Only use text-align: center on the container to center the text and h3 */
-        .video-container {
-            text-align: center;
-            margin: 40px 0 20px 0; /* Clear vertical spacing */
+        .recipe-link:hover {
+            color: #b12836; /* Deep red on link hover */
         }
         
-        .video-container h3 {
-            font-size: 1.4em;
-            color: #b12836;
-            margin-bottom: 15px;
+        .recipe-tagline {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 5px;
         }
 
-        .homepage-video {
-            /* This is the key: display: block and margin: 0 auto for centering */
-            display: block; 
-            margin: 0 auto; 
-            width: 100%; 
-            max-width: 500px; 
-            height: auto;
-            border-radius: 6px;
+        /* Footer/Disclaimer (Copied from Recipe) */
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
         }
-        /* ================================ */
-
-        /* Footer/Disclaimer (Copied from Recipe) */
-        .footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-            text-align: center;
-            font-size: 0.9em;
-            color: #666;
-        }
-    </style>
+    </style>
 </head>
 <body>
 
-    <div class="container">
+    <div class="container">
 
-        <header>
-            <h1>&#x1F373;&#x1f1ec;&#x1f1e7 We Have The Recipes! &#x1f1ec;&#x1f1e7<br>&#x1f1ec;&#x1f1e7 Dr. Kurrygan &mdash; a lover of takeaways &#x1f1ec;&#x1f1e7</h1>
-            <p style="text-align: center; font-style: italic;">Simple, Fast, &mdash; Simply Delicious.</p>
-        </header>
+        <header>
+            <h1>&#x1F373;&#x1f1ec;&#x1f1e7 We Have The Recipes! &#x1f1ec;&#x1f1e7<br>&#x1f1ec;&#x1f1e7 Dr. Kurrygan &mdash; a lover of takeaways &#x1f1ec;&#x1f1e7</h1>
+            <p style="text-align: center; font-style: italic;">Simple, Fast, &mdash; Simply Delicious.</p>
+        </header>
 
-        <section class="latest-recipes">
-            <h2>&#x1F4DC; Our Latest Recipes</h2>
-            
-            <ul class="recipe-list">
-                <li>
-                    <a href="ChickenTikkaMassala.html" class="recipe-link">
-                        20-Minute Chicken Tikka Masala Hack
-                    </a>
-                    <p class="recipe-tagline">The ultimate fakeaway: fast, creamy, and made with the secret Heinz Tomato Soup ingredient! (Serves 4), unless your fat like me</p>
-                </li>
-                
-                <li>
-                    <a href="#" class="recipe-link">
-                        Easy Peasy 10 Minute Rice
-                    </a>
-                    <p class="recipe-tagline">1 part rice (White or Basmati) to 2 parts cold water in a medium to large pan.<br>
-                        Bring to the boil uncovered (electric or gas, not induction hob).<br> 
-                        Once boiling turn heat down to the lowest temperature and quickly place lid on. <br>
-                        Perfect rice in 10 minutes. <br>
-                        Move pan off the heat and fluff rice with a fork, let sit with lid on unless ready to plate up.</p>
-                </li>
-                
-                <li>
-                    <a href="#" class="recipe-link">
-                        **[Coming Soon]** Super Simple Rogan Josh
-                    </a>
-                    <p class="recipe-tagline">Check back soon for more quick and delicious meals that are cheaper than the chipper! I'm a hungry boy and knows me grub</p>
-                </li>
+        <section class="latest-recipes">
+            <h2>&#x1F4DC; Our Latest Recipes</h2>
+            
+            <ul class="recipe-list">
+                <li>
+                    <a href="ChickenTikkaMassala.html" class="recipe-link">
+                        20-Minute Chicken Tikka Masala Hack
+                    </a>
+                    <p class="recipe-tagline">The ultimate fakeaway: fast, creamy, and made with the secret Heinz Tomato Soup ingredient! (Serves 4), unless your fat like me</p>
+                </li>
+                
+                <li>
+                    <a href="#" class="recipe-link">
+                        Easy Peasy 10 Minute Rice
+                    </a>
+                    <p class="recipe-tagline">1 part rice (White or Basmati) to 2 parts cold water in a medium to large pan.<br>
+                        Bring to the boil uncovered (electric or gas, not induction hob).<br> 
+                        Once boiling turn heat down to the lowest temperature and quickly place lid on. <br>
+                        Perfect rice in 10 minutes. <br>
+                        Move pan off the heat and fluff rice with a fork, let sit with lid on unless ready to plate up.</p>
+                </li>
+                
+                <li>
+                    <a href="#" class="recipe-link">
+                        **[Coming Soon]** Super Simple Rogan Josh
+                    </a>
+                    <p class="recipe-tagline">Check back soon for more quick and delicious meals that are cheaper than the chipper! I'm a hungry boy and knows me grub</p>
+                </li>
+                
+                <li>
+                    <a href="cooking_animation.mp4" class="recipe-link">
+                        Truffle Shuffle
+                    </a>
+                    <p class="recipe-tagline">Watch my Happy Dance for when I know there's a fakeaway stewing on the hob!</p>
+                </li>
 
-            </ul>
-        </section>
+            </ul>
+        </section>
 
-        <div class="video-container">
-            <h3>&#x1F3A5; Watch Our Quick Cook Demo!</h3>
-            <video src="cooking_animation.mp4" class="homepage-video" autoplay loop controls></video>
+        <div class="footer">
+            <p>&copy; 2025 We Have The Recipes. All rights reserved.<br>Powered by K9 &#x1F609;</p>
         </div>
 
-        <div class="footer">
-            <p>&copy; 2025 We Have The Recipes. All rights reserved.<br>Powered by K9 &#x1F609;</p>
-        </div>
-
-    </div>
+    </div>
 </body>
 </html>
