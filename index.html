@@ -83,27 +83,34 @@
             margin-top: 5px;
         }
 
-        /* === NEW CSS: Styling for the dedicated video section === */
-        .promo-video-section {
-            text-align: center; /* Centers the video element itself */
-            margin: 40px 0;
+        /* === NEW & MODIFIED CSS for a stable video section === */
+        .video-container {
+            /* Ensures the video content is centered */
+            text-align: center; 
+            /* Provides visual separation from the recipe list */
+            margin: 40px 0 20px 0; 
             padding: 20px;
-            background-color: #f0ad4e20; /* Light highlight for the section */
+            /* Added a subtle border/background for visual separation */
+            border: 1px dashed #f0ad4e; 
             border-radius: 8px;
         }
 
-        .promo-video-section h2 {
-            border-bottom: none;
-            margin-top: 0;
+        .video-container h3 {
+            font-size: 1.4em;
             color: #b12836;
+            margin-bottom: 15px;
         }
 
         .homepage-video {
-            width: 100%; /* Make video responsive up to max container width */
-            max-width: 500px; /* Set a reasonable maximum size */
+            /* Set the video to be a centered block element */
+            display: block; 
+            /* Centers the block element itself within its parent container */
+            margin: 0 auto; 
+            /* Ensures responsiveness and max size */
+            width: 100%; 
+            max-width: 500px; 
             height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            border-radius: 6px;
         }
         /* ============================================================= */
 
@@ -159,10 +166,10 @@
             </ul>
         </section>
 
-        <section class="promo-video-section">
-            <h2>&#x1F3A5; Watch Our Quick Cook Demo!</h2>
+        <div class="video-container">
+            <h3>&#x1F3A5; Watch Our Quick Cook Demo!</h3>
             <video src="cooking_animation.mp4" class="homepage-video" autoplay loop controls></video>
-        </section>
+        </div>
 
         <div class="footer">
             <p>&copy; 2025 We Have The Recipes. All rights reserved.<br>Powered by K9 &#x1F609;</p>
