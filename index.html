@@ -44,23 +44,6 @@
             padding-bottom: 5px;
         }
 
-        /* === NEW CSS: Styling for the Video Section at the bottom === */
-        .video-section {
-            text-align: center; /* Centers the video element itself */
-            margin: 30px 0;
-            padding: 20px 0;
-            border-top: 1px solid #eee;
-        }
-
-        .homepage-video {
-            width: 100%; /* Make video responsive up to max container width */
-            max-width: 400px; /* Set a reasonable maximum size */
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-        /* ============================================================= */
-
         /* New Styling for Recipe Links/List */
         .recipe-list {
             list-style-type: none;
@@ -100,6 +83,30 @@
             margin-top: 5px;
         }
 
+        /* === NEW CSS: Styling for the dedicated video section === */
+        .promo-video-section {
+            text-align: center; /* Centers the video element itself */
+            margin: 40px 0;
+            padding: 20px;
+            background-color: #f0ad4e20; /* Light highlight for the section */
+            border-radius: 8px;
+        }
+
+        .promo-video-section h2 {
+            border-bottom: none;
+            margin-top: 0;
+            color: #b12836;
+        }
+
+        .homepage-video {
+            width: 100%; /* Make video responsive up to max container width */
+            max-width: 500px; /* Set a reasonable maximum size */
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+        /* ============================================================= */
+
         /* Footer/Disclaimer (Copied from Recipe) */
         .footer {
             margin-top: 40px;
@@ -116,9 +123,7 @@
     <div class="container">
 
         <header>
-                            <h1>
-                &#x1F373;&#x1f1ec;&#x1f1e7 We Have The Recipes! &#x1f1ec;&#x1f1e7<br>&#x1f1ec;&#x1f1e7 Dr. Kurrygan &mdash; a lover of takeaways &#x1f1ec;&#x1f1e7
-            </h1>
+            <h1>&#x1F373;&#x1f1ec;&#x1f1e7 We Have The Recipes! &#x1f1ec;&#x1f1e7<br>&#x1f1ec;&#x1f1e7 Dr. Kurrygan &mdash; a lover of takeaways &#x1f1ec;&#x1f1e7</h1>
             <p style="text-align: center; font-style: italic;">Simple, Fast, &mdash; Simply Delicious.</p>
         </header>
 
@@ -154,9 +159,10 @@
             </ul>
         </section>
 
-        <div class="video-section">
+        <section class="promo-video-section">
+            <h2>&#x1F3A5; Watch Our Quick Cook Demo!</h2>
             <video src="cooking_animation.mp4" class="homepage-video" autoplay loop controls></video>
-        </div>
+        </section>
 
         <div class="footer">
             <p>&copy; 2025 We Have The Recipes. All rights reserved.<br>Powered by K9 &#x1F609;</p>
